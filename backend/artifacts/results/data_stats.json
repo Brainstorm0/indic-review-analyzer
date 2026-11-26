@@ -1,0 +1,61 @@
+{
+  "n_raw": 5780,
+  "n_clean": 5760,
+  "by_lang_split": {
+    "bn": {
+      "test": 173,
+      "train": 806,
+      "val": 173
+    },
+    "hi": {
+      "test": 173,
+      "train": 806,
+      "val": 173
+    },
+    "mr": {
+      "test": 173,
+      "train": 806,
+      "val": 173
+    },
+    "ta": {
+      "test": 173,
+      "train": 806,
+      "val": 173
+    },
+    "te": {
+      "test": 173,
+      "train": 806,
+      "val": 173
+    }
+  },
+  "label_by_lang": {
+    "bn": {
+      "negative": 572,
+      "positive": 580
+    },
+    "hi": {
+      "negative": 572,
+      "positive": 580
+    },
+    "mr": {
+      "negative": 572,
+      "positive": 580
+    },
+    "ta": {
+      "negative": 572,
+      "positive": 580
+    },
+    "te": {
+      "negative": 572,
+      "positive": 580
+    }
+  },
+  "avg_words_by_lang": {
+    "bn": 20.8,
+    "hi": 26.9,
+    "mr": 20.2,
+    "ta": 17.6,
+    "te": 18.5
+  },
+  "leakage_check_passed": true
+}

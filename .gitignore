@@ -1,0 +1,25 @@
+# Secrets
+backend/.env
+
+# Python environments and caches
+backend/.venv/
+backend/.venv-gpu/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Large or reproducible artifacts (models are 1 GB+; recreate with scripts.run_pipeline)
+backend/artifacts/models/
+backend/artifacts/_dropped_ablations/
+backend/artifacts/llm_cache/
+backend/data/raw/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

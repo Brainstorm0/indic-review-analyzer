@@ -1,0 +1,78 @@
+{
+  "accuracy": 0.9791666666666666,
+  "macro_f1": 0.9790616112090175,
+  "per_class": {
+    "negative": {
+      "precision": 0.9921259842519685,
+      "recall": 0.9692307692307692,
+      "f1": 0.980544747081712,
+      "support": 130
+    },
+    "positive": {
+      "precision": 0.9646017699115044,
+      "recall": 0.990909090909091,
+      "f1": 0.9775784753363229,
+      "support": 110
+    }
+  },
+  "confusion_matrix": [
+    [
+      126,
+      4
+    ],
+    [
+      1,
+      109
+    ]
+  ],
+  "ece": 0.08066666666666655,
+  "ci95_macro_f1": [
+    0.9536530446138901,
+    0.9958660670467404
+  ],
+  "ci95_accuracy": [
+    0.9550974406155905,
+    0.9959196017116524
+  ],
+  "ci_method": "group bootstrap (source review)",
+  "per_lang": {
+    "bn": {
+      "n": 40,
+      "accuracy": 0.975,
+      "macro_f1": 0.9746031746031746
+    },
+    "hi": {
+      "n": 40,
+      "accuracy": 0.95,
+      "macro_f1": 0.9494949494949495
+    },
+    "hinglish": {
+      "n": 40,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    "mr": {
+      "n": 40,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    "ta": {
+      "n": 40,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    "te": {
+      "n": 40,
+      "accuracy": 0.95,
+      "macro_f1": 0.948849104859335
+    }
+  },
+  "model_id": "llm_groq_zs",
+  "n_test": 240,
+  "family": "llm",
+  "llm": "groq:openai/gpt-oss-20b",
+  "shots": 0,
+  "subset": true,
+  "invalid_rate": 0.0,
+  "wall_time_s": 286.14491391181946
+}

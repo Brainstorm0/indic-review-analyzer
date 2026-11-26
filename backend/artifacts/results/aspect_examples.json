@@ -1,0 +1,266 @@
+[
+  {
+    "lang": "bn",
+    "text": "একেবারেই অকেজো অ্যাপ! আমি ইতিমধ্যে শুধুমাত্র আপলোড করা ভিডিওগুলিতে শিরোনাম যোগ করতে এটি ব্যবহার করতে পারি যা আমি শুধুমাত্র প্রধান অ্যাপের মাধ্যমেই আপলোড করতে পারবো!",
+    "gold_aspects": [
+      "ad-making",
+      "advanced editing",
+      "illustrations",
+      "instant shoot and post",
+      "participate in challenges",
+      "trending",
+      "viral dialogues"
+    ],
+    "llm": {
+      "overall": "negative",
+      "translation_en": "Completely useless app! I can already use it to add titles to uploaded videos which I can only upload via the main app!",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "negative",
+          "evidence": "একেবারেই অকেজো অ্যাপ!",
+          "evidence_en": "Completely useless app!"
+        }
+      ]
+    }
+  },
+  {
+    "lang": "bn",
+    "text": "এটি টান দেয় এবং গিঁটের উপর টাগ করে। আমার কুকুরের চুলে অনেক টান সৃষ্টি করে।",
+    "gold_aspects": [
+      "2-in-one dual head",
+      "all-in-one tool",
+      "safe"
+    ],
+    "llm": {
+      "overall": "negative",
+      "translation_en": "It pulls and tugs on the knot. It creates a lot of pull on my dog's hair.",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "negative",
+          "evidence": "এটি টান দেয় এবং গিঁটের উপর টাগ করে",
+          "evidence_en": "It pulls and tugs on the knot"
+        },
+        {
+          "aspect": "safety",
+          "sentiment": "negative",
+          "evidence": "আমার কুকুরের চুলে অনেক টান সৃষ্টি করে",
+          "evidence_en": "It creates a lot of pull on my dog's hair"
+        }
+      ]
+    }
+  },
+  {
+    "lang": "bn",
+    "text": "স্ট্যান্ডে শুধুমাত্র 3 স্তরের লকিং আছে এবং স্থির রাবারযুক্ত পা নেই",
+    "gold_aspects": [
+      "adjustable height",
+      "cellphone holder",
+      "level indicator",
+      "light weight",
+      "multi level locking and steady rubberized legs",
+      "multipurpose head"
+    ],
+    "llm": {
+      "overall": "negative",
+      "translation_en": "The stand only has 3 levels of locking and no fixed rubber feet.",
+      "aspects": [
+        {
+          "aspect": "safety",
+          "sentiment": "negative",
+          "evidence": "স্ট্যান্ডে শুধুমাত্র 3 স্তরের লকিং আছে",
+          "evidence_en": "The stand only has 3 levels of locking"
+        },
+        {
+          "aspect": "durability",
+          "sentiment": "negative",
+          "evidence": "স্থির রাবারযুক্ত পা নেই",
+          "evidence_en": "No fixed rubber feet"
+        }
+      ]
+    }
+  },
+  {
+    "lang": "hi",
+    "text": "बहुत ही बेकार ऐप! मैं इसका इस्तेमाल केवल पहले से अपलोड किए गए वीडियो में टाइटल्स जोड़ने के लिए कर सकता हूं जिसे मैं सिर्फ मेन ऐप के माध्यम से अपलोड कर सकता हूं!",
+    "gold_aspects": [
+      "ad-making",
+      "advanced editing",
+      "illustrations",
+      "instant shoot and post",
+      "participate in challenges",
+      "trending",
+      "viral dialogues"
+    ],
+    "llm": {
+      "overall": "negative",
+      "translation_en": "Very useless app! I can only use it to add titles to videos that I have already uploaded, which I can only upload via the main app!",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "negative",
+          "evidence": "बहुत ही बेकार ऐप! मैं इसका इस्तेमाल केवल पहले से अपलोड किए गए वीडियो में टाइटल्स जोड़ने के लिए कर सकता हूं",
+          "evidence_en": "Very useless app! I can only use it to add titles to videos that I have already uploaded"
+        }
+      ]
+    }
+  },
+  {
+    "lang": "hi",
+    "text": "यह गांठों को खींचता और टग करता है। यह मेरे कुत्ते के बहुत सारे बालों को खींचता है।",
+    "gold_aspects": [
+      "2-in-one dual head",
+      "all-in-one tool",
+      "safe"
+    ],
+    "llm": {
+      "overall": "negative",
+      "translation_en": "It pulls and tugs knots. It pulls a lot of my dog's hair.",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "positive",
+          "evidence": "यह गांठों को खींचता और टग करता है।",
+          "evidence_en": "It pulls and tugs knots."
+        },
+        {
+          "aspect": "safety",
+          "sentiment": "negative",
+          "evidence": "यह मेरे कुत्ते के बहुत सारे बालों को खींचता है।",
+          "evidence_en": "It pulls a lot of my dog's hair."
+        }
+      ]
+    }
+  },
+  {
+    "lang": "hi",
+    "text": "स्टैंड में केवल 3 लेवल तक की लॉकिंग है और इसमें स्थिर रबरयुक्त लेग्स भी नहीं हैं।",
+    "gold_aspects": [
+      "adjustable height",
+      "cellphone holder",
+      "level indicator",
+      "light weight",
+      "multi level locking and steady rubberized legs",
+      "multipurpose head"
+    ],
+    "llm": {
+      "overall": "negative",
+      "translation_en": "The stand has locking only up to 3 levels and it also does not have stable rubberized legs.",
+      "aspects": [
+        {
+          "aspect": "safety",
+          "sentiment": "negative",
+          "evidence": "स्टैंड में केवल 3 लेवल तक की लॉकिंग है",
+          "evidence_en": "The stand has locking only up to 3 levels."
+        },
+        {
+          "aspect": "durability",
+          "sentiment": "negative",
+          "evidence": "इसमें स्थिर रबरयुक्त लेग्स भी नहीं हैं।",
+          "evidence_en": "It also does not have stable rubberized legs."
+        }
+      ]
+    }
+  },
+  {
+    "lang": "mr",
+    "text": "अतिशय निरुपयोगी अॅप! मी फक्त आधीच अपलोड केलेल्या व्हिडिओजना टायटल्स जोडण्यासाठी याचा वापर केला, जे मी फक्त मेन अॅपद्वारे अपलोड करू शकतो!",
+    "gold_aspects": [
+      "ad-making",
+      "advanced editing",
+      "illustrations",
+      "instant shoot and post",
+      "participate in challenges",
+      "trending",
+      "viral dialogues"
+    ],
+    "llm": {
+      "overall": "negative",
+      "translation_en": "Very useless app! I only used it to add titles to videos that I had already uploaded, which I can only upload via the main app!",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "negative",
+          "evidence": "अतिशय निरुपयोगी अॅप!",
+          "evidence_en": "Very useless app!"
+        },
+        {
+          "aspect": "performance",
+          "sentiment": "negative",
+          "evidence": "मी फक्त आधीच अपलोड केलेल्या व्हिडिओजना टायटल्स जोडण्यासाठी याचा वापर केला",
+          "evidence_en": "I only used it to add titles to videos that I had already uploaded"
+        }
+      ]
+    }
+  },
+  {
+    "lang": "mr",
+    "text": "ते गाठी ओढते आणि हिसके देते. माझ्या कुत्र्याचे केस खूप खेचते.",
+    "gold_aspects": [
+      "2-in-one dual head",
+      "all-in-one tool",
+      "safe"
+    ],
+    "llm": {
+      "overall": "negative",
+      "translation_en": "It pulls knots and gives hiccups. It pulls my dog's hair a lot.",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "negative",
+          "evidence": "ते गाठी ओढते आणि हिसके देते.",
+          "evidence_en": "It pulls knots and gives hiccups."
+        }
+      ]
+    }
+  },
+  {
+    "lang": "mr",
+    "text": "ज्या प्रकारे हा चित्रपट सुरू होतो, त्यामुळे प्रत्येक MJ चाहत्याच्या अंगावर रोमांच उभे राहतील. हा तुम्हाला मायकेलच्या रोमांचक आणि प्रेरणादायक प्रवासासाठी घेऊन जातो.",
+    "gold_aspects": [
+      "awe-inspiring",
+      "detailed narration",
+      "educative",
+      "emotional",
+      "factual accuracy",
+      "heart touching",
+      "informative",
+      "interesting",
+      "motivating"
+    ],
+    "llm": {
+      "overall": "positive",
+      "translation_en": "The way this movie starts, it will make every MJ fan's body feel excitement. It takes you on Michael's exciting and inspiring journey.",
+      "aspects": [
+        {
+          "aspect": "emotional",
+          "sentiment": "positive",
+          "evidence": "रोमांचक आणि प्रेरणादायक प्रवास",
+          "evidence_en": "exciting and inspiring journey"
+        }
+      ]
+    }
+  },
+  {
+    "lang": "ta",
+    "text": "இது முடிச்சுகளில் சிக்கிக்கொள்கிறது. என் நாயின் முடியில் அடிக்கடி சிக்கிக்கொள்கிறது",
+    "gold_aspects": [
+      "2-in-one dual head",
+      "all-in-one tool",
+      "safe"
+    ],
+    "llm": {
+      "overall": "negative",
+      "translation_en": "It gets tangled in knots. It often gets tangled in my dog's hair.",
+      "aspects": [
+        {
+          "aspect": "performance",
+          "sentiment": "negative",
+          "evidence": "இது முடிச்சுகளில் சிக்கிக்கொள்கிறது",
+          "evidence_en": "It gets tangled in knots"
+        }
+      ]
+    }
+  }
+]

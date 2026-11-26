@@ -1,0 +1,12 @@
+[
+  {
+    "step": "evaluate",
+    "returncode": 0,
+    "seconds": 4.7
+  },
+  {
+    "step": "expected",
+    "returncode": 0,
+    "seconds": 1.2
+  }
+]

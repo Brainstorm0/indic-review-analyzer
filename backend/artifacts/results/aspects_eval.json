@@ -1,0 +1,9 @@
+{
+  "llm": "groq:openai/gpt-oss-20b",
+  "n": 14,
+  "aspect_precision": 0.13636363636363635,
+  "aspect_recall": 0.039473684210526314,
+  "aspect_f1": 0.06122448979591836,
+  "overall_sentiment_accuracy": 1.0,
+  "matching": "one-to-one case-insensitive substring matching"
+}

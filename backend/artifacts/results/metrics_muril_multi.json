@@ -1,0 +1,96 @@
+{
+  "accuracy": 0.9319148936170213,
+  "macro_f1": 0.9319145853987569,
+  "per_class": {
+    "negative": {
+      "precision": 0.9238900634249472,
+      "recall": 0.9397849462365592,
+      "f1": 0.9317697228144989,
+      "support": 465
+    },
+    "positive": {
+      "precision": 0.9400428265524625,
+      "recall": 0.9242105263157895,
+      "f1": 0.9320594479830149,
+      "support": 475
+    }
+  },
+  "confusion_matrix": [
+    [
+      437,
+      28
+    ],
+    [
+      36,
+      439
+    ]
+  ],
+  "ece": 0.05809806515561766,
+  "ci95_macro_f1": [
+    0.9008761227833986,
+    0.9582071049583252
+  ],
+  "ci95_accuracy": [
+    0.9012738853503185,
+    0.9584697604851347
+  ],
+  "ci_method": "group bootstrap (source review)",
+  "per_lang": {
+    "bn": {
+      "n": 173,
+      "accuracy": 0.953757225433526,
+      "macro_f1": 0.9537556802993852
+    },
+    "hi": {
+      "n": 173,
+      "accuracy": 0.930635838150289,
+      "macro_f1": 0.9306335204490778
+    },
+    "hinglish": {
+      "n": 75,
+      "accuracy": 0.92,
+      "macro_f1": 0.9196428571428572
+    },
+    "mr": {
+      "n": 173,
+      "accuracy": 0.9248554913294798,
+      "macro_f1": 0.9248454469507101
+    },
+    "ta": {
+      "n": 173,
+      "accuracy": 0.9421965317919075,
+      "macro_f1": 0.9421791443850267
+    },
+    "te": {
+      "n": 173,
+      "accuracy": 0.9132947976878613,
+      "macro_f1": 0.9132832080200501
+    }
+  },
+  "model_id": "muril_multi",
+  "n_test": 940,
+  "family": "transformer",
+  "n_params": 237557762,
+  "n_trainable": 86042882,
+  "train_time_s": 2284.585198163986,
+  "latency_ms": 13.95999333326472,
+  "best_val_macro_f1": 0.93935998641881,
+  "epochs_run": 4,
+  "hparams": {
+    "model_name": "google/muril-base-cased",
+    "model_id": "muril_multi",
+    "display": "MuRIL multilingual (all languages + Hinglish)",
+    "langs": "all",
+    "epochs": 4,
+    "batch_size": 16,
+    "grad_accum": 1,
+    "lr": 3e-05,
+    "max_len": 128,
+    "warmup": 0.1,
+    "weight_decay": 0.01,
+    "patience": 2,
+    "max_train": 0,
+    "freeze_encoder": false,
+    "freeze_embeddings": true
+  }
+}

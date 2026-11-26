@@ -1,0 +1,12 @@
+{
+  "llm": "groq:openai/gpt-oss-20b",
+  "n_generated": 500,
+  "llm_label_valid_rate": 1.0,
+  "agreement_with_gold": 0.99,
+  "cohen_kappa": 0.9799576706003078,
+  "split_counts": {
+    "train": 350,
+    "test": 75,
+    "val": 75
+  }
+}

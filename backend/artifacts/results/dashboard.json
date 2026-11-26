@@ -1,0 +1,655 @@
+{
+  "best_model": "muril_multi",
+  "leaderboard": [
+    {
+      "model_id": "llm_groq_zs",
+      "display": "LLM groq:openai/gpt-oss-20b (zero-shot)",
+      "family": "llm",
+      "scope": "llm-subset",
+      "n_test": 240,
+      "accuracy": 0.9791666666666666,
+      "macro_f1": 0.9790616112090175,
+      "ci_low": 0.9536530446138901,
+      "ci_high": 0.9958660670467404,
+      "ece": 0.08066666666666655,
+      "n_params": null,
+      "train_time_s": null,
+      "latency_ms": null
+    },
+    {
+      "model_id": "muril_multi",
+      "display": "MuRIL multilingual (all languages + Hinglish)",
+      "family": "transformer",
+      "scope": "full",
+      "n_test": 940,
+      "accuracy": 0.9319148936170213,
+      "macro_f1": 0.9319145853987569,
+      "ci_low": 0.9008761227833986,
+      "ci_high": 0.9582071049583252,
+      "ece": 0.05809806515561766,
+      "n_params": 237557762.0,
+      "train_time_s": 2284.585198163986,
+      "latency_ms": 13.95999333326472
+    },
+    {
+      "model_id": "tfidf_lr",
+      "display": "TF-IDF (char+word n-grams) + Logistic Regression",
+      "family": "classical",
+      "scope": "full",
+      "n_test": 940,
+      "accuracy": 0.8276595744680851,
+      "macro_f1": 0.8276564537157758,
+      "ci_low": 0.781826298548303,
+      "ci_high": 0.865484368332006,
+      "ece": 0.06060937961080395,
+      "n_params": 205379.0,
+      "train_time_s": 16.231570720672607,
+      "latency_ms": 1.0472060000756755
+    },
+    {
+      "model_id": "tfidf_nb",
+      "display": "TF-IDF + Multinomial Naive Bayes",
+      "family": "classical",
+      "scope": "full",
+      "n_test": 940,
+      "accuracy": 0.8127659574468085,
+      "macro_f1": 0.8127651098465816,
+      "ci_low": 0.7666374127942114,
+      "ci_high": 0.8544834236479069,
+      "ece": 0.05090720984936849,
+      "n_params": 410758.0,
+      "train_time_s": 11.943183183670044,
+      "latency_ms": 3.6576340001192875
+    },
+    {
+      "model_id": "bilstm_subword",
+      "display": "BiLSTM (subword-local tokens, maxmean pooling, 1 layer)",
+      "family": "rnn",
+      "scope": "full",
+      "n_test": 940,
+      "accuracy": 0.798936170212766,
+      "macro_f1": 0.7988157237640008,
+      "ci_low": 0.7579710871683724,
+      "ci_high": 0.8300637657134148,
+      "ece": 0.1684536139381692,
+      "n_params": 1292674.0,
+      "train_time_s": 321.7538073062897,
+      "latency_ms": 4.357182000239845
+    },
+    {
+      "model_id": "tfidf_bnb",
+      "display": "TF-IDF n-grams + Bernoulli Naive Bayes (presence/absence)",
+      "family": "classical",
+      "scope": "full",
+      "n_test": 940,
+      "accuracy": 0.7595744680851064,
+      "macro_f1": 0.7583833384134553,
+      "ci_low": 0.7064691852956042,
+      "ci_high": 0.8055943905889857,
+      "ece": 0.2386656201864854,
+      "n_params": 410758.0,
+      "train_time_s": 12.238362073898315,
+      "latency_ms": 12.18001600005664
+    }
+  ],
+  "per_lang": {
+    "bilstm_subword": {
+      "bn": 0.803409090909091,
+      "hi": 0.8265838011226945,
+      "hinglish": 0.7450348899624262,
+      "mr": 0.7794551798174987,
+      "ta": 0.8264446227929374,
+      "te": 0.7797507370678103
+    },
+    "llm_groq_zs": {
+      "bn": 0.9746031746031746,
+      "hi": 0.9494949494949495,
+      "hinglish": 1.0,
+      "mr": 1.0,
+      "ta": 1.0,
+      "te": 0.948849104859335
+    },
+    "muril_multi": {
+      "bn": 0.9537556802993852,
+      "hi": 0.9306335204490778,
+      "hinglish": 0.9196428571428572,
+      "mr": 0.9248454469507101,
+      "ta": 0.9421791443850267,
+      "te": 0.9132832080200501
+    },
+    "tfidf_bnb": {
+      "bn": 0.7842820072119435,
+      "hi": 0.6940136054421768,
+      "hinglish": 0.7437511238985794,
+      "mr": 0.7370376625570005,
+      "ta": 0.7797507370678103,
+      "te": 0.7972543110664658
+    },
+    "tfidf_lr": {
+      "bn": 0.8090188338406985,
+      "hi": 0.8439097744360902,
+      "hinglish": 0.8092296511627908,
+      "mr": 0.8258856682769726,
+      "ta": 0.8265838011226945,
+      "te": 0.8381448810478482
+    },
+    "tfidf_nb": {
+      "bn": 0.8437426822332987,
+      "hi": 0.7742949854480983,
+      "hinglish": 0.76515011972739,
+      "mr": 0.8205934499715652,
+      "ta": 0.8207852965747702,
+      "te": 0.8208092485549133
+    }
+  },
+  "mcnemar": [
+    {
+      "model_a": "muril_multi",
+      "model_b": "tfidf_lr",
+      "n": 940,
+      "a_right_b_wrong": 120,
+      "a_wrong_b_right": 22,
+      "p_value": 1.5677310787896847e-17,
+      "significant_at_0.05": true
+    },
+    {
+      "model_a": "muril_multi",
+      "model_b": "tfidf_nb",
+      "n": 940,
+      "a_right_b_wrong": 133,
+      "a_wrong_b_right": 21,
+      "p_value": 4.215322229503845e-21,
+      "significant_at_0.05": true
+    },
+    {
+      "model_a": "muril_multi",
+      "model_b": "bilstm_subword",
+      "n": 940,
+      "a_right_b_wrong": 152,
+      "a_wrong_b_right": 27,
+      "p_value": 2.4725334908821853e-22,
+      "significant_at_0.05": true
+    },
+    {
+      "model_a": "muril_multi",
+      "model_b": "tfidf_bnb",
+      "n": 940,
+      "a_right_b_wrong": 188,
+      "a_wrong_b_right": 26,
+      "p_value": 1.746278792245139e-31,
+      "significant_at_0.05": true
+    }
+  ],
+  "subset_leaderboard": [
+    {
+      "model_id": "llm_groq_zs",
+      "display": "LLM groq:openai/gpt-oss-20b (zero-shot)",
+      "n": 240,
+      "accuracy": 0.9791666666666666,
+      "macro_f1": 0.9790616112090175
+    },
+    {
+      "model_id": "muril_multi",
+      "display": "MuRIL multilingual (all languages + Hinglish)",
+      "n": 240,
+      "accuracy": 0.9166666666666666,
+      "macro_f1": 0.9165217391304348
+    },
+    {
+      "model_id": "tfidf_lr",
+      "display": "TF-IDF (char+word n-grams) + Logistic Regression",
+      "n": 240,
+      "accuracy": 0.7791666666666667,
+      "macro_f1": 0.7785168288903206
+    },
+    {
+      "model_id": "tfidf_nb",
+      "display": "TF-IDF + Multinomial Naive Bayes",
+      "n": 240,
+      "accuracy": 0.775,
+      "macro_f1": 0.7747497219132369
+    },
+    {
+      "model_id": "bilstm_subword",
+      "display": "BiLSTM (subword-local tokens, maxmean pooling, 1 layer)",
+      "n": 240,
+      "accuracy": 0.7416666666666667,
+      "macro_f1": 0.7407846143125915
+    },
+    {
+      "model_id": "tfidf_bnb",
+      "display": "TF-IDF n-grams + Bernoulli Naive Bayes (presence/absence)",
+      "n": 240,
+      "accuracy": 0.725,
+      "macro_f1": 0.7240610410424361
+    }
+  ],
+  "subset_mcnemar": [
+    {
+      "model_a": "llm_groq_zs",
+      "model_b": "muril_multi",
+      "n": 240,
+      "a_right_b_wrong": 18,
+      "a_wrong_b_right": 3,
+      "p_value": 0.0014896392822265625,
+      "significant_at_0.05": true
+    },
+    {
+      "model_a": "llm_groq_zs",
+      "model_b": "tfidf_lr",
+      "n": 240,
+      "a_right_b_wrong": 50,
+      "a_wrong_b_right": 2,
+      "p_value": 6.123990203832363e-13,
+      "significant_at_0.05": true
+    },
+    {
+      "model_a": "llm_groq_zs",
+      "model_b": "tfidf_nb",
+      "n": 240,
+      "a_right_b_wrong": 50,
+      "a_wrong_b_right": 1,
+      "p_value": 4.618527782440651e-14,
+      "significant_at_0.05": true
+    }
+  ],
+  "ablations": [
+    {
+      "group": "Classifier on the same TF-IDF features",
+      "items": [
+        {
+          "spec": "tfidf_lr",
+          "label": "TF-IDF (char+word n-grams) + Logistic Regression",
+          "macro_f1": 0.8276564537157758
+        },
+        {
+          "spec": "tfidf_nb",
+          "label": "TF-IDF + Multinomial Naive Bayes",
+          "macro_f1": 0.8127651098465816
+        },
+        {
+          "spec": "tfidf_bnb",
+          "label": "TF-IDF n-grams + Bernoulli Naive Bayes (presence/absence)",
+          "macro_f1": 0.7583833384134553
+        }
+      ]
+    },
+    {
+      "group": "Transformer vs best classical and recurrent models",
+      "items": [
+        {
+          "spec": "muril_multi",
+          "label": "MuRIL multilingual (all languages + Hinglish)",
+          "macro_f1": 0.9319145853987569
+        },
+        {
+          "spec": "tfidf_lr",
+          "label": "TF-IDF (char+word n-grams) + Logistic Regression",
+          "macro_f1": 0.8276564537157758
+        },
+        {
+          "spec": "bilstm_subword",
+          "label": "BiLSTM (subword-local tokens, maxmean pooling, 1 layer)",
+          "macro_f1": 0.7988157237640008
+        }
+      ]
+    }
+  ],
+  "figures": [
+    "fig_macro_f1.png",
+    "fig_per_language_heatmap.png",
+    "fig_confusion_matrices.png",
+    "fig_training_curves.png",
+    "fig_reliability.png",
+    "fig_efficiency.png",
+    "fig_ablations.png"
+  ],
+  "data_stats": {
+    "n_raw": 5780,
+    "n_clean": 5760,
+    "by_lang_split": {
+      "bn": {
+        "test": 173,
+        "train": 806,
+        "val": 173
+      },
+      "hi": {
+        "test": 173,
+        "train": 806,
+        "val": 173
+      },
+      "mr": {
+        "test": 173,
+        "train": 806,
+        "val": 173
+      },
+      "ta": {
+        "test": 173,
+        "train": 806,
+        "val": 173
+      },
+      "te": {
+        "test": 173,
+        "train": 806,
+        "val": 173
+      }
+    },
+    "label_by_lang": {
+      "bn": {
+        "negative": 572,
+        "positive": 580
+      },
+      "hi": {
+        "negative": 572,
+        "positive": 580
+      },
+      "mr": {
+        "negative": 572,
+        "positive": 580
+      },
+      "ta": {
+        "negative": 572,
+        "positive": 580
+      },
+      "te": {
+        "negative": 572,
+        "positive": 580
+      }
+    },
+    "avg_words_by_lang": {
+      "bn": 20.8,
+      "hi": 26.9,
+      "mr": 20.2,
+      "ta": 17.6,
+      "te": 18.5
+    },
+    "leakage_check_passed": true
+  },
+  "hinglish_label_quality": {
+    "llm": "groq:openai/gpt-oss-20b",
+    "n_generated": 500,
+    "llm_label_valid_rate": 1.0,
+    "agreement_with_gold": 0.99,
+    "cohen_kappa": 0.9799576706003078,
+    "split_counts": {
+      "train": 350,
+      "test": 75,
+      "val": 75
+    }
+  },
+  "aspects_eval": {
+    "llm": "groq:openai/gpt-oss-20b",
+    "n": 14,
+    "aspect_precision": 0.13636363636363635,
+    "aspect_recall": 0.039473684210526314,
+    "aspect_f1": 0.06122448979591836,
+    "overall_sentiment_accuracy": 1.0,
+    "matching": "one-to-one case-insensitive substring matching"
+  },
+  "aspect_examples": [
+    {
+      "lang": "bn",
+      "text": "একেবারেই অকেজো অ্যাপ! আমি ইতিমধ্যে শুধুমাত্র আপলোড করা ভিডিওগুলিতে শিরোনাম যোগ করতে এটি ব্যবহার করতে পারি যা আমি শুধুমাত্র প্রধান অ্যাপের মাধ্যমেই আপলোড করতে পারবো!",
+      "gold_aspects": [
+        "ad-making",
+        "advanced editing",
+        "illustrations",
+        "instant shoot and post",
+        "participate in challenges",
+        "trending",
+        "viral dialogues"
+      ],
+      "llm": {
+        "overall": "negative",
+        "translation_en": "Completely useless app! I can already use it to add titles to uploaded videos which I can only upload via the main app!",
+        "aspects": [
+          {
+            "aspect": "performance",
+            "sentiment": "negative",
+            "evidence": "একেবারেই অকেজো অ্যাপ!",
+            "evidence_en": "Completely useless app!"
+          }
+        ]
+      }
+    },
+    {
+      "lang": "bn",
+      "text": "এটি টান দেয় এবং গিঁটের উপর টাগ করে। আমার কুকুরের চুলে অনেক টান সৃষ্টি করে।",
+      "gold_aspects": [
+        "2-in-one dual head",
+        "all-in-one tool",
+        "safe"
+      ],
+      "llm": {
+        "overall": "negative",
+        "translation_en": "It pulls and tugs on the knot. It creates a lot of pull on my dog's hair.",
+        "aspects": [
+          {
+            "aspect": "performance",
+            "sentiment": "negative",
+            "evidence": "এটি টান দেয় এবং গিঁটের উপর টাগ করে",
+            "evidence_en": "It pulls and tugs on the knot"
+          },
+          {
+            "aspect": "safety",
+            "sentiment": "negative",
+            "evidence": "আমার কুকুরের চুলে অনেক টান সৃষ্টি করে",
+            "evidence_en": "It creates a lot of pull on my dog's hair"
+          }
+        ]
+      }
+    },
+    {
+      "lang": "bn",
+      "text": "স্ট্যান্ডে শুধুমাত্র 3 স্তরের লকিং আছে এবং স্থির রাবারযুক্ত পা নেই",
+      "gold_aspects": [
+        "adjustable height",
+        "cellphone holder",
+        "level indicator",
+        "light weight",
+        "multi level locking and steady rubberized legs",
+        "multipurpose head"
+      ],
+      "llm": {
+        "overall": "negative",
+        "translation_en": "The stand only has 3 levels of locking and no fixed rubber feet.",
+        "aspects": [
+          {
+            "aspect": "safety",
+            "sentiment": "negative",
+            "evidence": "স্ট্যান্ডে শুধুমাত্র 3 স্তরের লকিং আছে",
+            "evidence_en": "The stand only has 3 levels of locking"
+          },
+          {
+            "aspect": "durability",
+            "sentiment": "negative",
+            "evidence": "স্থির রাবারযুক্ত পা নেই",
+            "evidence_en": "No fixed rubber feet"
+          }
+        ]
+      }
+    },
+    {
+      "lang": "hi",
+      "text": "बहुत ही बेकार ऐप! मैं इसका इस्तेमाल केवल पहले से अपलोड किए गए वीडियो में टाइटल्स जोड़ने के लिए कर सकता हूं जिसे मैं सिर्फ मेन ऐप के माध्यम से अपलोड कर सकता हूं!",
+      "gold_aspects": [
+        "ad-making",
+        "advanced editing",
+        "illustrations",
+        "instant shoot and post",
+        "participate in challenges",
+        "trending",
+        "viral dialogues"
+      ],
+      "llm": {
+        "overall": "negative",
+        "translation_en": "Very useless app! I can only use it to add titles to videos that I have already uploaded, which I can only upload via the main app!",
+        "aspects": [
+          {
+            "aspect": "performance",
+            "sentiment": "negative",
+            "evidence": "बहुत ही बेकार ऐप! मैं इसका इस्तेमाल केवल पहले से अपलोड किए गए वीडियो में टाइटल्स जोड़ने के लिए कर सकता हूं",
+            "evidence_en": "Very useless app! I can only use it to add titles to videos that I have already uploaded"
+          }
+        ]
+      }
+    },
+    {
+      "lang": "hi",
+      "text": "यह गांठों को खींचता और टग करता है। यह मेरे कुत्ते के बहुत सारे बालों को खींचता है।",
+      "gold_aspects": [
+        "2-in-one dual head",
+        "all-in-one tool",
+        "safe"
+      ],
+      "llm": {
+        "overall": "negative",
+        "translation_en": "It pulls and tugs knots. It pulls a lot of my dog's hair.",
+        "aspects": [
+          {
+            "aspect": "performance",
+            "sentiment": "positive",
+            "evidence": "यह गांठों को खींचता और टग करता है।",
+            "evidence_en": "It pulls and tugs knots."
+          },
+          {
+            "aspect": "safety",
+            "sentiment": "negative",
+            "evidence": "यह मेरे कुत्ते के बहुत सारे बालों को खींचता है।",
+            "evidence_en": "It pulls a lot of my dog's hair."
+          }
+        ]
+      }
+    },
+    {
+      "lang": "hi",
+      "text": "स्टैंड में केवल 3 लेवल तक की लॉकिंग है और इसमें स्थिर रबरयुक्त लेग्स भी नहीं हैं।",
+      "gold_aspects": [
+        "adjustable height",
+        "cellphone holder",
+        "level indicator",
+        "light weight",
+        "multi level locking and steady rubberized legs",
+        "multipurpose head"
+      ],
+      "llm": {
+        "overall": "negative",
+        "translation_en": "The stand has locking only up to 3 levels and it also does not have stable rubberized legs.",
+        "aspects": [
+          {
+            "aspect": "safety",
+            "sentiment": "negative",
+            "evidence": "स्टैंड में केवल 3 लेवल तक की लॉकिंग है",
+            "evidence_en": "The stand has locking only up to 3 levels."
+          },
+          {
+            "aspect": "durability",
+            "sentiment": "negative",
+            "evidence": "इसमें स्थिर रबरयुक्त लेग्स भी नहीं हैं।",
+            "evidence_en": "It also does not have stable rubberized legs."
+          }
+        ]
+      }
+    },
+    {
+      "lang": "mr",
+      "text": "अतिशय निरुपयोगी अॅप! मी फक्त आधीच अपलोड केलेल्या व्हिडिओजना टायटल्स जोडण्यासाठी याचा वापर केला, जे मी फक्त मेन अॅपद्वारे अपलोड करू शकतो!",
+      "gold_aspects": [
+        "ad-making",
+        "advanced editing",
+        "illustrations",
+        "instant shoot and post",
+        "participate in challenges",
+        "trending",
+        "viral dialogues"
+      ],
+      "llm": {
+        "overall": "negative",
+        "translation_en": "Very useless app! I only used it to add titles to videos that I had already uploaded, which I can only upload via the main app!",
+        "aspects": [
+          {
+            "aspect": "performance",
+            "sentiment": "negative",
+            "evidence": "अतिशय निरुपयोगी अॅप!",
+            "evidence_en": "Very useless app!"
+          },
+          {
+            "aspect": "performance",
+            "sentiment": "negative",
+            "evidence": "मी फक्त आधीच अपलोड केलेल्या व्हिडिओजना टायटल्स जोडण्यासाठी याचा वापर केला",
+            "evidence_en": "I only used it to add titles to videos that I had already uploaded"
+          }
+        ]
+      }
+    },
+    {
+      "lang": "mr",
+      "text": "ते गाठी ओढते आणि हिसके देते. माझ्या कुत्र्याचे केस खूप खेचते.",
+      "gold_aspects": [
+        "2-in-one dual head",
+        "all-in-one tool",
+        "safe"
+      ],
+      "llm": {
+        "overall": "negative",
+        "translation_en": "It pulls knots and gives hiccups. It pulls my dog's hair a lot.",
+        "aspects": [
+          {
+            "aspect": "performance",
+            "sentiment": "negative",
+            "evidence": "ते गाठी ओढते आणि हिसके देते.",
+            "evidence_en": "It pulls knots and gives hiccups."
+          }
+        ]
+      }
+    },
+    {
+      "lang": "mr",
+      "text": "ज्या प्रकारे हा चित्रपट सुरू होतो, त्यामुळे प्रत्येक MJ चाहत्याच्या अंगावर रोमांच उभे राहतील. हा तुम्हाला मायकेलच्या रोमांचक आणि प्रेरणादायक प्रवासासाठी घेऊन जातो.",
+      "gold_aspects": [
+        "awe-inspiring",
+        "detailed narration",
+        "educative",
+        "emotional",
+        "factual accuracy",
+        "heart touching",
+        "informative",
+        "interesting",
+        "motivating"
+      ],
+      "llm": {
+        "overall": "positive",
+        "translation_en": "The way this movie starts, it will make every MJ fan's body feel excitement. It takes you on Michael's exciting and inspiring journey.",
+        "aspects": [
+          {
+            "aspect": "emotional",
+            "sentiment": "positive",
+            "evidence": "रोमांचक आणि प्रेरणादायक प्रवास",
+            "evidence_en": "exciting and inspiring journey"
+          }
+        ]
+      }
+    },
+    {
+      "lang": "ta",
+      "text": "இது முடிச்சுகளில் சிக்கிக்கொள்கிறது. என் நாயின் முடியில் அடிக்கடி சிக்கிக்கொள்கிறது",
+      "gold_aspects": [
+        "2-in-one dual head",
+        "all-in-one tool",
+        "safe"
+      ],
+      "llm": {
+        "overall": "negative",
+        "translation_en": "It gets tangled in knots. It often gets tangled in my dog's hair.",
+        "aspects": [
+          {
+            "aspect": "performance",
+            "sentiment": "negative",
+            "evidence": "இது முடிச்சுகளில் சிக்கிக்கொள்கிறது",
+            "evidence_en": "It gets tangled in knots"
+          }
+        ]
+      }
+    }
+  ]
+}

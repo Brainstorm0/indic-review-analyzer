@@ -1,0 +1,94 @@
+{
+  "accuracy": 0.798936170212766,
+  "macro_f1": 0.7988157237640008,
+  "per_class": {
+    "negative": {
+      "precision": 0.7771084337349398,
+      "recall": 0.832258064516129,
+      "f1": 0.8037383177570093,
+      "support": 465
+    },
+    "positive": {
+      "precision": 0.8235294117647058,
+      "recall": 0.7663157894736842,
+      "f1": 0.7938931297709924,
+      "support": 475
+    }
+  },
+  "confusion_matrix": [
+    [
+      387,
+      78
+    ],
+    [
+      111,
+      364
+    ]
+  ],
+  "ece": 0.1684536139381692,
+  "ci95_macro_f1": [
+    0.7579710871683724,
+    0.8300637657134148
+  ],
+  "ci95_accuracy": [
+    0.758428597565934,
+    0.8308950237040734
+  ],
+  "ci_method": "group bootstrap (source review)",
+  "per_lang": {
+    "bn": {
+      "n": 173,
+      "accuracy": 0.8034682080924855,
+      "macro_f1": 0.803409090909091
+    },
+    "hi": {
+      "n": 173,
+      "accuracy": 0.8265895953757225,
+      "macro_f1": 0.8265838011226945
+    },
+    "hinglish": {
+      "n": 75,
+      "accuracy": 0.7466666666666667,
+      "macro_f1": 0.7450348899624262
+    },
+    "mr": {
+      "n": 173,
+      "accuracy": 0.7803468208092486,
+      "macro_f1": 0.7794551798174987
+    },
+    "ta": {
+      "n": 173,
+      "accuracy": 0.8265895953757225,
+      "macro_f1": 0.8264446227929374
+    },
+    "te": {
+      "n": 173,
+      "accuracy": 0.7803468208092486,
+      "macro_f1": 0.7797507370678103
+    }
+  },
+  "model_id": "bilstm_subword",
+  "n_test": 940,
+  "family": "rnn",
+  "n_params": 1292674,
+  "train_time_s": 321.7538073062897,
+  "latency_ms": 4.357182000239845,
+  "best_val_macro_f1": 0.7987938503355134,
+  "epochs_run": 20,
+  "hparams": {
+    "type": "rnn",
+    "model_id": "bilstm_subword",
+    "display": "BiLSTM (subword-local tokens, maxmean pooling, 1 layer)",
+    "cell": "lstm",
+    "bidirectional": true,
+    "tokenizer": "subword-local",
+    "pooling": "maxmean",
+    "emb": 128,
+    "hidden": 128,
+    "layers": 1,
+    "dropout": 0.3,
+    "max_len": 128,
+    "langs": null,
+    "vocab_size": 8027
+  }
+}

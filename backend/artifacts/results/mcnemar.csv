@@ -1,0 +1,5 @@
+model_a,model_b,n,a_right_b_wrong,a_wrong_b_right,p_value,significant_at_0.05
+muril_multi,tfidf_lr,940,120,22,1.5677310787896847e-17,True
+muril_multi,tfidf_nb,940,133,21,4.215322229503845e-21,True
+muril_multi,bilstm_subword,940,152,27,2.4725334908821853e-22,True
+muril_multi,tfidf_bnb,940,188,26,1.746278792245139e-31,True
